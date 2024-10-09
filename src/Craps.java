@@ -13,9 +13,17 @@ public class Craps {
                 System.out.println(" Craps! You lost!");
             } else if ((crapsRoll == 7) || (crapsRoll == 11)) {
                 System.out.println(" Natural! You won!");
-            } else {
+            }
+            else {
                 System.out.println(" The point. Roll again.");
-                continue;
+                int die = rnd.nextInt(6) + 1;
+                int dieOff = die + crapsRoll;
+                if (dieOff == 7){
+                    System.out.println("You got a 7! You lost!");
+                }
+                else {
+                    System.out.println("You made a point! You won!");
+                }
             }
             System.out.println("Want to roll again? (yes/no)");
             String endGame = scanner.nextLine().toLowerCase();
