@@ -20,7 +20,7 @@ public class Craps {
             System.out.println("Want to roll again? (yes/no)");
             String endGame = scanner.nextLine().toLowerCase();
             if (!endGame.equals("yes")) {
-                System.out.println("Thanks for playing!");
+                System.out.println("Thanks for playing! :)");
                 break;
             }
         }
