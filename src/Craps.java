@@ -19,10 +19,10 @@ public class Craps {
                 int die = rnd.nextInt(6) + 1;
                 int dieOff = die + crapsRoll;
                 if (dieOff == 7){
-                    System.out.println("You got a 7! You lost!");
+                    System.out.println("You rolled a " + die + " which adds up to " + dieOff + " You lost!");
                 }
                 else {
-                    System.out.println("You made a point! You won!");
+                    System.out.println("You rolled a " + die + " which adds up to " + dieOff  + " You won!");
                 }
             }
             System.out.println("Want to roll again? (yes/no)");
